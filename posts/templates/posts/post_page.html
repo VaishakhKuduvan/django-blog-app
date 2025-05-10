@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ post.title }} 
+{% endblock  %}
+
+{% block content %}
+    <section>
+        <div style="display: flex; justify-content: center;">
+            <img src="{{ post.banner.url }}" alt=" Banner" style="width: 800px; height: auto;">
+        </div>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.date }}</p>
+        <p>{{ post.body }}</p>
+        
+    </section>
+{% endblock  %}
+
